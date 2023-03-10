@@ -12,7 +12,7 @@ tar -xfv xpdf-tools-linux-4.04.tar.gz
 
 ```
 bash
-for f in `ls *.pdf` ; do pdftotext $f > ${f%.pdf}.txt ; done
+for f in `ls *.pdf` ; do pdftotext -layout $f > ${f%.pdf}.txt ; done
 
 
 ```
